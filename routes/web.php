@@ -15,6 +15,7 @@ use Illuminate\View\Middleware\ShareErrorsFromSession;
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 Route::get('/about_us', [HomeController::class, 'about_us'])->name('about_us.index');
+Route::get('locale/{locale}', [HomeController::class, 'setLocale'])->name('locale');
 
 Route::middleware([
     EncryptCookies::class,

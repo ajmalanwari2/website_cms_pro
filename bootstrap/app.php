@@ -24,6 +24,9 @@ return Application::configure(basePath: dirname(__DIR__))
             'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
             'role_or_permission' => \App\Http\Middleware\CheckRoleOrPermission::class,
         ]);
+        $middleware->web(append: [
+            App\Http\Middleware\LocalizationMiddleware::class,
+        ]);
     })
     ->withProviders([
         Illuminate\Auth\AuthServiceProvider::class,
