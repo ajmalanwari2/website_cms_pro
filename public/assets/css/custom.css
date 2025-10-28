@@ -1,0 +1,9 @@
+.custom-icon {
+    color: #ffff;          /* white */
+    margin: 32px !important;
+    font-size: 26px !important;  /* this will actually make it large */
+}
+
+.dropdown-item:active{
+    background-color: #053f0f !important;
+}
