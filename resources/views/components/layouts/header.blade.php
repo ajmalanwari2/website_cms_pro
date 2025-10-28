@@ -1,7 +1,7 @@
   <header class=" home-two header-bottom">
       <div class="container">
           <nav class="navbar navbar-expand-lg navbar-light">
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="collapse navbar-collapse custom-menu" id="navbarSupportedContent">
                   <ul class="navbar-nav nav-menu ms-auto">
 
                       <li class="nav-item">
@@ -59,16 +59,16 @@
                       @endphp
 
                       <li class="nav-item dropdown ms-lg-3">
-                          <a class="nav-link dropdown-toggle d-flex align-items-center gap-1" href="#"
-                              id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              🌐
-                          </a>
+                          <div>
+                              <i class="las la-globe custom-icon"></i>
+                          </div>
                           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
                               <li><a class="dropdown-item @if($currentLocale === 'en') active @endif"
                                       href="{{ route('locale', ['locale' => 'en']) }}">@lang('translate.english')</a>
                               </li>
                               <li><a class="dropdown-item @if($currentLocale === 'da') active @endif"
-                                      href="{{ route('locale', ['locale' => 'da']) }}">@lang('translate.dari')</a></li>
+                                      href="{{ route('locale', ['locale' => 'da']) }}">@lang('translate.dari')</a>
+                              </li>
                               <li><a class="dropdown-item @if($currentLocale === 'pa') active @endif"
                                       href="{{ route('locale', ['locale' => 'pa']) }}">@lang('translate.pashto')</a>
                               </li>
@@ -80,7 +80,8 @@
 
                   </ul>
               </div>
-              <a class="navbar-brand logo" href="{{ route('home.index') }}"><img src="assets/images/logo/Logo.png" alt=""></a>
+              <a class="navbar-brand logo" href="{{ route('home.index') }}"><img src="assets/images/logo/Logo.png"
+                      alt=""></a>
               <button class="navbar-toggler header-button" type="button" data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                   aria-label="Toggle navigation">
@@ -89,7 +90,7 @@
 
               <!-- <div class="toggle-search-box">
                 <div class="search-icon">
-                    <i class="las la-search"></i>
+                    <i class="las la-globe"></i>
                 </div>
                 <div class="search-input">
                     <form>
@@ -103,7 +104,7 @@
                 <a href="#" class="btn--base">GET STARTED</a>
             </div> -->
 
-            
+
           </nav>
       </div>
   </header>

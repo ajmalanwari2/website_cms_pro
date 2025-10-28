@@ -4,4 +4,9 @@
 <link rel="stylesheet" href="{{ asset('assets/css/slick.css')}}">
 <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css')}}">
 <link rel="stylesheet" href="{{ asset('assets/css/odometer.css')}}">
-<link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
+@if((App::getLocale() == 'en' || App::getLocale() == 'ger'))
+<link rel="stylesheet" href="{{ asset('assets/css/style_ltr.css')}}">
+@else
+<link rel="stylesheet" href="{{ asset('assets/css/style_rtl.css')}}">
+@endif
+<link rel="stylesheet" href="{{ asset('assets/css/custom.css')}}">
