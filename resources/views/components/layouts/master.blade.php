@@ -3,7 +3,11 @@
 'title' => 'Home',
 'sidebar' => null,
 ])
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}"
+direction="{{ session()->has('locale') && (session()->get('locale') == 'en' || session()->get('locale') == 'ger') ? 'ltr' : 'rtl' }}"
+      dir="{{ session()->has('locale') && (session()->get('locale') == 'en' || session()->get('locale') == 'ger') ? 'ltr' : 'rtl' }}"
+      style="direction: {{ session()->has('locale') && (session()->get('locale') == 'en' || session()->get('locale') == 'ger') ? 'ltr' : 'rtl' }}"
+      data-theme="theme-default" data-assets-path="{{ asset('assets/') }}">
 
 <head>
     <meta charset="UTF-8">
@@ -32,6 +36,8 @@
     <x-js_css.js />
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     {{ $jsLinks ?? '' }}
     @stack('js')
 </body>

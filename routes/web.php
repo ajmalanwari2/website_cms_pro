@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 Route::get('/about_us', [HomeController::class, 'about_us'])->name('about_us.index');
+Route::get('locale/{locale}', [HomeController::class, 'setLocale'])->name('locale');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
