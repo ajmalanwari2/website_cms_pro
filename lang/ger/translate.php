@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'home' => 'اصلی صفحه',
-    'about' => 'زمونژ په اړه',
+    'home' => 'Home',
+    'about' => 'About us',
     'multimedia' => 'Multimedia',
-    'contact' => 'زمونژ سره اړیکه',
+    'contact' => 'Contact',
     'publications' => 'Publikationen',
     'programs' => 'Programme',
     'news_and_events' => 'Nachrichten und Ereignisse',

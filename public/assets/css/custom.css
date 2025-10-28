@@ -7,3 +7,6 @@
 .dropdown-item:active{
     background-color: #053f0f !important;
 }
+.nav-menu .nav-item .nav-link{
+    font-size: 16px !important;
+}
