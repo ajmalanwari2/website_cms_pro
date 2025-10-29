@@ -32,6 +32,10 @@ class HomeController extends Controller
         return view('web_pages.about_us');
     }
 
+     public function contact(){
+        return view('web_pages.contact');
+    }
+
      public function setLocale($locale){
         if(in_array($locale, ['en', 'da', 'pa', 'ger'])){
             App::setLocale($locale);

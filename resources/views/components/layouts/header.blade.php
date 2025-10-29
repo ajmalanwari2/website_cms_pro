@@ -1,15 +1,43 @@
+  <style>
+    .lang-dropdown {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 16px;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: 900;
+}
+
+.lang-dropdown option {
+    color: #000;
+}
+
+.lang-dropdown:hover {
+    border-color: #fff;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.language-selector i {
+    color: #fff;
+    font-size: 18px;
+}
+
+  </style>
   <header class=" home-two header-bottom">
       <div class="container">
           <nav class="navbar navbar-expand-lg navbar-light">
               <div class="collapse navbar-collapse custom-menu" id="navbarSupportedContent">
                   <ul class="navbar-nav nav-menu ms-auto">
 
-                      <li class="nav-item">
-                          <div class="get-started-button d-lg-none d-block">
-                              <a href="#" class="btn--base w-100">GET STARTED</a>
-                          </div>
-                      </li>
-                      <li class="nav-item dropdown">
                       <li class="nav-item">
                           <a class="nav-link" href="{{ route('home.index') }}">@lang('translate.home')</a>
                       </li>
@@ -50,7 +78,7 @@
                           </ul>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="contact.html"> @lang('translate.cooperate_with_us')</a>
+                          <a class="nav-link" href="{{ route('contact.index') }}"> @lang('translate.cooperate_with_us')</a>
                       </li>
 
                       <!-- 🌐 Language Dropdown -->
@@ -58,7 +86,7 @@
                       $currentLocale = app()->getLocale();
                       @endphp
 
-                      <li class="nav-item dropdown ms-lg-3">
+                      <!-- <li class="nav-item dropdown ms-lg-3">
                           <div>
                               <i class="las la-globe custom-icon"></i>
                           </div>
@@ -76,10 +104,36 @@
                                       href="{{ route('locale', ['locale' => 'ger']) }}">@lang('translate.german')</a>
                               </li>
                           </ul>
-                      </li>
+                      </li> -->
 
                   </ul>
               </div>
+              <ul>
+      <li class="nav-item d-flex align-items-center ms-3">
+    <div class="language-selector position-relative">
+        <!-- <i class="las la-globe text-white fs-4 me-2"></i> -->
+        <select class="form--control1 lang-dropdown" onchange="window.location.href=this.value">
+            <option value="{{ route('locale', ['locale' => 'en']) }}" 
+                {{ $currentLocale === 'en' ? 'selected' : '' }}>
+              @lang('translate.english')
+            </option>
+            <option value="{{ route('locale', ['locale' => 'da']) }}" 
+                {{ $currentLocale === 'da' ? 'selected' : '' }}>
+                @lang('translate.dari')
+            </option>
+            <option value="{{ route('locale', ['locale' => 'pa']) }}" 
+                {{ $currentLocale === 'pa' ? 'selected' : '' }}>
+                @lang('translate.pashto')
+            </option>
+            <option value="{{ route('locale', ['locale' => 'ger']) }}" 
+                {{ $currentLocale === 'ger' ? 'selected' : '' }}>
+               @lang('translate.german')
+            </option>
+        </select>
+    </div>
+</li>
+</ul>
+
               <a class="navbar-brand logo" href="{{ route('home.index') }}"><img src="assets/images/logo/Logo.png"
                       alt=""></a>
               <button class="navbar-toggler header-button" type="button" data-bs-toggle="collapse"

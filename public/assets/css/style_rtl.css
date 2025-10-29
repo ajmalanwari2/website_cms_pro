@@ -1787,7 +1787,7 @@ ul[class*="custom--tab"] li:last-child button {
 .navbar-brand.logo img {
   height: 100%;
   max-width: 204px;
-  max-height: 50px;
+  max-height: 88px;
 }
 
 @media (max-width: 991px) {
@@ -1970,7 +1970,7 @@ ul[class*="custom--tab"] li:last-child button {
 }
 
 .nav-menu .nav-item .nav-link {
-  font-weight: 500;
+  font-weight: 900;
   font-size: 16px;
   color: #fff !important;
   padding: 33px 0 !important;
@@ -7015,4 +7015,5 @@ div[class*="col"]:nth-of-type(3n + 2) .work-item {
     margin-top: 40px;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

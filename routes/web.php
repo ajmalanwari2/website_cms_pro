@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use App\Http\Middleware\EncryptCookies;
@@ -15,7 +16,10 @@ use Illuminate\View\Middleware\ShareErrorsFromSession;
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 Route::get('/about_us', [HomeController::class, 'about_us'])->name('about_us.index');
+Route::get('/contact', [HomeController::class, 'contact'])->name('contact.index');
 Route::get('locale/{locale}', [HomeController::class, 'setLocale'])->name('locale');
+Route::post('/membership/store', [MembershipController::class, 'store'])->name('membership.store');
+
 
 Route::middleware([
     EncryptCookies::class,

@@ -1787,7 +1787,7 @@ ul[class*="custom--tab"] li:last-child button {
 .navbar-brand.logo img {
   height: 100%;
   max-width: 204px;
-  max-height: 50px;
+  max-height: 88px;
 }
 
 @media (max-width: 991px) {
@@ -7017,6 +7017,6 @@ div[class*="col"]:nth-of-type(3n + 2) .work-item {
 }
 
 .custom-menu {
-  margin-right: 10%;
+  margin-right: 4%;
 }
 /*# sourceMappingURL=style.css.map */

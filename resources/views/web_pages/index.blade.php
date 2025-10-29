@@ -30,30 +30,17 @@
             <div class="row gy-5">
                 <div class="col-lg-6">
                     <div class="about-left-thumb">
-                        <ul class="thumbs">
-                            <li><img src="assets/images/home-2/about-01.png" alt=""></li>
-                            <li>
-                                <ul class="rotate-thumbs d-flex mt-lg-5 mt-3">
-                                    <li><img src="assets/images/home-2/about-02.png" alt=""></li>
-                                    <li><img src="assets/images/home-2/about-03.png" alt=""></li>
-                                </ul>
-                            </li>
-                        </ul>
+                            <img src="assets/images/home-2/about-01.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about-right ps-lg-5 mt-lg-5">
-                        <h2 class="title">Offers Engineered Solutions For Your Startup Business</h2>
-                        <p class="para">In this article, we will go over what a pitch deck is, the manner by which to
-                            fabricate one, how to involve influence in your pitch deck, and the vital contrast between a
-                            deals deck and a venture deck.</p>
-                        <p class="para">With an important contribution from Scott Hindell, who has north of 25 years of
-                            involvement counseling business people on serious areas of strength for building decks you
-                            will remove central issues on the most proficient method to combine a pitch deck that can
-                            explain the cosmetics and qualities of your startup.</p>
-                        <div class="about-btn">
+                        <h2 class="title">About the Association</h2>
+                        <p class="para">Please write about the association and the histrory of the association</p>
+                        <p class="para">You can add all these content from CMS</p>
+                        <!-- <div class="about-btn">
                             <a href="about.html" class="btn--base style-three">GET STARTED</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

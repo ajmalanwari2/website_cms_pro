@@ -7,6 +7,17 @@
 .dropdown-item:active{
     background-color: #053f0f !important;
 }
-.nav-menu .nav-item .nav-link{
-    font-size: 16px !important;
+
+.form--control1 {
+    height: 30;
+    /* border-radius: 6px; */
+    color:black;
+    font-weight: 400;
+    outline: none;
+    width: 90%;
+    padding: 3px 9px;
+    background-color: #fff;
+    /* border: 1px solid #dfdfdf; */
+    margin-right: 10px;
+    margin-top: 3px;
 }

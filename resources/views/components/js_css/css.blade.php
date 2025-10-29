@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{ asset('assets/images/favicon/favicon.png')}}">
 <link rel="stylesheet" href="{{ asset('assets/css/fontawesome-all.min.css')}}">
 <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css')}}">
 <link rel="stylesheet" href="{{ asset('assets/css/slick.css')}}">
