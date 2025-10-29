@@ -41,8 +41,8 @@
                     <div class="thumb"><img src="assets/images/contact/phone-book.png" alt=""></div>
                     <div class="content">
                         <h5 class="title">Phone Number</h5>
-                        <p class="para"><a href="tel:">+701  000 1111  2222  3333</a></p>
-                        <p class="para"><a href="tel:">+801  000 1111  2222  3333</a></p>
+                        <p class="para"><a href="tel:">+49 888 888 888 88</a></p>
+                        <p class="para"><a href="tel:">+49 555 555 555 55</a></p>
                     </div>
                 </div>
             </div>
