@@ -11,11 +11,10 @@
             <div class="row justify-content-start">
                 <div class="col-lg-12">
                     <div class="banner-content">
-                        <h1 class="title">EXACTLY WHERE YOURBUSINESS NEEDS IT</h1>
+                        <h1 class="title"> @lang('translate.welcome')</h1>
                         <ul class="buttons-list justify-content-start">
-                            <li class="buttons-list__item"><a href="about.html" class="btn--base">Donate Now</a></li>
-                            <li class="buttons-list__item"><a href="contact.html" class="btn--base style-two">CONTACT
-                                    WITH US</a></li>
+                            <li class="buttons-list__item"><a href="about.html" class="btn--base">همکاری با ما</a></li>
+                            <li class="buttons-list__item"><a href="contact.html" class="btn--base style-two">عضویت در سازمان</a></li>
                         </ul>
                     </div>
                 </div>

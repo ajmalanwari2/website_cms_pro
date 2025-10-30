@@ -78,7 +78,7 @@
             <div class="container">
                 <div class="row gy-3">
                     <div class="col-md-12 text-center">
-                        <div class="bottom-footer-text text-white"> Copyright &copy; 2022. All Rights Reserved By Bizcon
+                        <div class="bottom-footer-text text-white"> @lang('translate.copyright')
                         </div>
                     </div>
                 </div>

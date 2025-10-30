@@ -13,5 +13,7 @@ return [
     'dari' => 'Dari',
     'pashto' => 'Pashto',
     'german' => 'German',
-      
+    'copyright' => 'Copyright @ 2025. All Rights Reserved By Rainbow Afghanistan',
+    'welcome' => 'Welcome to Rainbow Afghanistan'
+
 ];
